@@ -73,51 +73,6 @@ small,
   font-weight: 400;
 }
 
-.btn {
-    font-weight: 400;
-    color: #111;
-    text-align: center;
-    vertical-align: middle;
-    background-color: transparent;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #025a1ff1;
-    border-color: #025a1ff1;
-}
-
-.btn-info {
-    color: #fff;
-    background-color: #17a2b8;
-    border-color: #17a2b8;
-}
-
-.nav {
-    list-style: none;
-}
-
-.navbar-brand {
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-}
-
-.card {
-    background-color: #fff;
-}
-.card-header {
-    background-color: rgba(0, 0, 0, 0.03);
-}
-
-.card-footer {
-    background-color: rgba(0, 0, 0, 0.03);
-}
-
 .text-muted {
     color: #6c757d !important;
 }
@@ -132,16 +87,4 @@ small,
   
 .text-center {
     text-align: center !important;
-}
-
-.navbar {
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.navbar-brand {
-    color: #fff;
-}
-
-.navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.5);
 }

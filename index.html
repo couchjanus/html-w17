@@ -8,11 +8,20 @@
     <meta name="author" content="">
   
     <!-- Place your kit's code here -->
-    <script src="https://kit.fontawesome.com/56e81c2621.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/56e81c2621.js" crossorigin="anonymous">
+    </script>
   
     <!-- Custom styles for this template -->
+    <!-- <link href="css/reset.css" rel="stylesheet"> -->
     <link href="css/main.css" rel="stylesheet">
-
+    <link href="css/layout1.css" rel="stylesheet">
+    <!-- <link href="css/card1.css" rel="stylesheet"> -->
+    <!-- <link href="css/nav1.css" rel="stylesheet"> -->
+    <!-- <link href="css/button.css" rel="stylesheet"> -->
+    <!-- <link href="css/footer.css" rel="stylesheet"> -->
+    <!-- <link href="css/jumbotron.css" rel="stylesheet"> -->
+    <!-- <link href="css/great.css" rel="stylesheet"> -->
+    
 
     <title>Peculiar Shop</title>
 </head>
@@ -22,8 +31,8 @@
     <!-- nav -->
     <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">Peculiar Shop</a>
-            <div class="navbar-collapse" id="navbarResponsive">
+            <a class="navbar-brand float-left" href="#">Peculiar Shop</a>
+            <div class="navbar-collapse float-right" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
@@ -43,15 +52,15 @@
     </nav>
     
     <!-- /.nav -->
-    
+
     <!-- Page Content -->
     <!-- container -->
     <div class="container">
         <!-- row -->
         <div class="row">
             <!-- col-3 -->
-            <div class="col-3">
-                <h1 class="my-4">Shop Name</h1>
+            <div class="col-3 aside">
+                <h1 class="my-4">Categories</h1>
                 <div class="list-group">
                 <a href="#" class="list-group-item">Category 1</a>
                 <a href="#" class="list-group-item">Category 2</a>
@@ -61,15 +70,33 @@
             <!-- /.col-3 -->
 
             <!-- col-9 -->
-            <main role="main" class="col-9">
+            <main role="main" class="col-9 main">
                 <!-- carousel -->
-                <header>
-                    <a href="index.html"><h1>Peculiar Blog</h1></a>
+                <div class="row">
+                <header class="jumbotron">
+                    
+                    <section class="banner">
+                      <div class="container">
+                        <div class="inner">
+                            <header>
+                                <h2 class="jumbotron-heading">Peculiar Shopaholic</h2>
+                            </header>
+                            <p class="lead">Something short and leading about the collection below—its contents, the creator, etc.
+                              Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+                            <footer>
+                                    <a href="#" class="btn btn-special">Main Action</a>
+                                    <a href="#" class="btn btn-special">Tell Me More</a>
+                            </footer>
+                        </div>
+                      </div>
+                  </section>
+                
                 </header>
+            </div>
                 <!-- row -->
                 <div class="row">
                     <!-- col-4 -->
-                    <div class="col-4">
+                    <div class="col-3">
                         <div class="card">
                             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                             <div class="card-body">
@@ -82,8 +109,8 @@
                             <div class="card-footer">
                                 <div class="align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn view-detail">View Detail</button>
-                                        <button type="button" class="btn add-to-cart">Add To Cart</button>
+                                        <button type="button" class="btn  btn-info">View Detail</button>
+                                        <button type="button" class="btn btn-primary">Add To Cart</button>
                                     </div>
                                     <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                                 </div>
@@ -92,10 +119,115 @@
                     </div>
                     <!-- /.col-4 -->
                     <!-- col-4 -->
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <div class="card-body">
+                              <h4 class="card-title">
+                                <a href="#">Item One</a>
+                              </h4>
+                              <h5>$24.99</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn  btn-info">View Detail</button>
+                                        <button type="button" class="btn btn-primary">Add To Cart</button>
+                                    </div>
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
                     <!-- col-4 -->
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <div class="card-body">
+                              <h4 class="card-title">
+                                <a href="#">Item One</a>
+                              </h4>
+                              <h5>$24.99</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn  btn-info">View Detail</button>
+                                        <button type="button" class="btn btn-primary">Add To Cart</button>
+                                    </div>
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
                     <!-- col-4 -->
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <div class="card-body">
+                              <h4 class="card-title">
+                                <a href="#">Item One</a>
+                              </h4>
+                              <h5>$24.99</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn  btn-info">View Detail</button>
+                                        <button type="button" class="btn btn-primary">Add To Cart</button>
+                                    </div>
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
                     <!-- col-4 -->
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <div class="card-body">
+                              <h4 class="card-title">
+                                <a href="#">Item One</a>
+                              </h4>
+                              <h5>$24.99</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn  btn-info">View Detail</button>
+                                        <button type="button" class="btn btn-primary">Add To Cart</button>
+                                    </div>
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
                     <!-- col-4 -->
+                    <div class="col-3">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <div class="card-body">
+                              <h4 class="card-title">
+                                <a href="#">Item One</a>
+                              </h4>
+                              <h5>$24.99</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn  btn-info">View Detail</button>
+                                        <button type="button" class="btn btn-primary">Add To Cart</button>
+                                    </div>
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
                 </div>
                 <!-- /.row -->
             </main>
@@ -104,23 +236,45 @@
         </div>
         <!-- /.row -->
     </div>
+    <div class="cf"></div>
     <!-- /.container -->
-    
+            <section class="great-started section">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="great-started-text text-center">
+                                    <h4 class="">We Are Ready to Help You</h4>
+                                    <h2 class="">Get the Best Solution for Your Business</h2>
+                                    <a href="#" class="btn btn-common">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <div class="cf"></div>
     <!-- Footer -->
-    <footer class="">
+    <footer class="footer">
+        <div class="copyright">
         <!-- container -->
-        <div class="container">
-            <div class="footer-socials">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-                <a href="#"><i class="fab fa-reddit"></i></a>
-            </div>
-            <p class="text-center">Copyright &copy; Your Website 2020</p>
-        </div>
+               <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="site-info float-left">
+                                2020 &copy; Peculiar Shopaholic by <a rel="nofollow" href="#">Janus</a>
+                            </div>
+                            <div class="bottom-social-icons social-icon float-right">
+                                <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
+                                <a class="google-plus" href="#"><i class="fab fa-google-plus"></i></a>
+                                <a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+                                <a class="dribble" href="#"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         <!-- /.container -->
+        </div>
     </footer>
     <!-- /.footer -->
 </body>

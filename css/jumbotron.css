@@ -1,9 +1,12 @@
 /* jumbotron */
+
 .jumbotron {
-    padding: 6em 0;
+    padding: 2em 0;
 }
+  
 /* banner */
 .banner {
+    padding: 2em 0;
     color: #fff;
     text-align: center;
     background-attachment: fixed;
@@ -18,7 +21,8 @@
     color: #fff;
     display: inline-block;
     text-align: center;
-    padding: 3em;
+    margin: 2em 22em;
+    padding: 2em;
     background: rgba(52, 77, 43, 0.5);
 }
 
@@ -55,14 +59,14 @@
 }
 
 .btn-special {
-    background: rgba(255, 255, 255, 0.5);;
+    background: #20c997;
     border: double 2px #fff;
     font-weight: 900;
     color: #fff;
 }
 
 .btn-special:hover {
-    background: #96dad1 !important;
+    background: #02f5d4 !important;
     border-color: #058d7bcb !important;
-    
+    color: #fff;
 }

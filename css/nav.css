@@ -1,0 +1,87 @@
+/* nav */
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: #045517;
+}
+  
+.navbar > .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+  
+.navbar-brand:hover, .navbar-brand:focus {
+    text-decoration: none;
+}
+ 
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+  
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-expand {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  
+.navbar-expand > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+  
+.navbar-expand .navbar-nav {
+    flex-direction: row;
+}
+  
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+  
+.navbar-expand > .container {
+    flex-wrap: nowrap;
+}
+
+/*================= hover ====================*/
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 0.75);
+}

@@ -1,9 +1,13 @@
 /* footer */
-
-.copyright {
+.footer {
     background-color: #045517;
-    padding: 3em;
     color: #fff;
+    width: 100%;
+    /* display: flex; */
+}
+.copyright {
+    padding: 3em;
+    
 }
 
 .copyright .site-info {
@@ -56,4 +60,25 @@
 .social-icon .linkedin:hover {
     background-color: #007bb5;
     border-color: #007bb5;
+}
+
+.footer .container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Tablet menu */
+@media all and (max-width: 600px) {
+
+    .copyright .container div{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .copyright .container div.site-info {
+        display: none;
+    }
 }

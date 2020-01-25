@@ -38,5 +38,18 @@
     border-top-left-radius: calc(0.25rem - 1px);
     border-top-right-radius: calc(0.25rem - 1px);
 }
- 
-  
+
+
+@media (max-width: 800px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .col, .col-4 {
+        max-width: 100%;
+        padding: 0 2em;
+    }
+}
+

@@ -2,6 +2,7 @@
     background: url(../images/03.jpg) fixed no-repeat;
     background-size: cover;
     padding: 6em 0;
+    display: flex;
 }
 
 .great-started .great-started-text h4 {
@@ -18,4 +19,11 @@
 
 .great-started .great-started-text .btn-common {
     text-transform: uppercase;
+}
+
+
+@media all and (max-width: 600px) {
+    .great-started {
+        display: none;
+    }
 }

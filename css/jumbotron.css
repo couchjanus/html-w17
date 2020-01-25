@@ -1,12 +1,8 @@
 /* jumbotron */
-
-.jumbotron {
-    padding: 2em 0;
-}
-  
-/* banner */
 .banner {
-    padding: 2em 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0;
     color: #fff;
     text-align: center;
     background-attachment: fixed;
@@ -21,7 +17,7 @@
     color: #fff;
     display: inline-block;
     text-align: center;
-    margin: 2em 22em;
+    margin: 2em 10em;
     padding: 2em;
     background: rgba(52, 77, 43, 0.5);
 }
@@ -69,4 +65,10 @@
     background: #02f5d4 !important;
     border-color: #058d7bcb !important;
     color: #fff;
+}
+
+@media all and (max-width: 900px) {
+    .lead {
+        display: none;
+    }
 }

@@ -34,6 +34,9 @@
 .navbar-nav {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
@@ -47,7 +50,7 @@
 .navbar-expand {
     flex-flow: row nowrap;
     justify-content: flex-start;
-  }
+}
   
 .navbar-expand > .container {
     padding-right: 0;
@@ -67,6 +70,155 @@
     flex-wrap: nowrap;
 }
 
+@media (max-width: 575.98px) {
+  .navbar-expand-sm > .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar-expand-sm {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .navbar-expand-sm .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar-expand-sm > .container {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  
+}
+
+@media (max-width: 767.98px) {
+  .navbar-expand-md > .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .navbar-expand-md .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar-expand-md > .container {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  
+}
+
+@media (max-width: 991.98px) {
+  .navbar-expand-lg > .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar-expand-lg > .container {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  
+}
+
+@media (max-width: 1199.98px) {
+  .navbar-expand-xl > .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-expand-xl {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .navbar-expand-xl .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar-expand-xl > .container {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  
+}
+
+.navbar-expand {
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.navbar-expand > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-expand .navbar-nav {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.navbar-expand > .container {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+
+
 /*================= hover ====================*/
 
 .navbar .navbar-brand {
@@ -77,7 +229,6 @@
     color: rgba(255, 255, 255, 0.75);
 }
 
-
 .navbar .navbar-nav .nav-link {
     color: #fff;
 }
@@ -85,3 +236,57 @@
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
     color: rgba(255, 255, 255, 0.75);
 }
+
+
+/* toggle */
+
+.navbar label {
+    display: none;
+}
+
+.navbar input[type="checkbox"] + label {
+    color: #fff;
+} 
+    
+.navbar input[type="checkbox"]:checked + label {
+    color: #fed136;
+    font-style: normal;
+} 
+    
+.navbar input[type="checkbox"] {
+    display: none;
+}
+
+/* Tablet menu */
+@media all and (max-width: 600px) {
+    .navbar label {
+        display: block;
+        order: 1;
+    }
+    
+    .navbar-brand {
+        order: 0;
+    }
+
+    .navbar .navbar-expand {
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: none;
+    }
+    
+    .navbar input[type="checkbox"]:checked~.navbar-expand {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        order: 3;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+} 

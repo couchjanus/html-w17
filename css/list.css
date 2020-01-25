@@ -1,5 +1,7 @@
 .list-group {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
@@ -23,9 +25,4 @@
   margin-bottom: 0;
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
-}
-
-.list-group-item {
-    color: #1b1e21;
-    background-color: #c6c8ca;
 }

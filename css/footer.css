@@ -3,7 +3,7 @@
     background-color: #045517;
     color: #fff;
     width: 100%;
-    /* display: flex; */
+    display: flex;
 }
 .copyright {
     padding: 3em;

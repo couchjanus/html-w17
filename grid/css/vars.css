@@ -1,0 +1,15 @@
+/* CSS Variables */
+
+:root {
+    --primary: rgba(2, 65, 2, 0.1);
+    --dark: #025a1ff1;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --navbar-background: #025a1ff1;
+    --nav-hover-color:#fed136;
+
+    /* font-size: 74.945vh; */
+    --green: #045517;
+    --yellow: #cbbe0d;
+
+}

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Grid CSS Website Theme</title>
+
+    <link rel="stylesheet" href="css/vars.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link href="css/effects.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/56e81c2621.js" crossorigin="anonymous">
+    </script>
+
+    <style>
+        #check {
+            display: none;
+        }
+
+        #icon {
+            position: absolute;
+            color: #fed136;
+            font-size: 1.2rem;
+            display: inline-block;
+            margin: 0.5em 1rem;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        /* bar icon */
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 35px;
+            height: 5px;
+            margin: 6px 0;
+            background-color: #fff;
+            transition: 0.5s;
+        }
+
+        #icon:hover .bar1,
+        #icon:hover .bar2,
+        #icon:hover .bar3 {
+            background-color: #fed136;
+            transition: 0.5s;
+        }
+
+        .aside {
+            position: absolute;
+            height: 100%;
+            width: 300px;
+            background-color: var(--green);
+            transition: all .5s;
+            left: -300px;
+        }
+
+        .aside>nav {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: var(--green);
+            width: 100%;
+            top: 60px;
+        }
+
+        .aside>nav a {
+            text-decoration: none;
+        }
+
+        .link {
+            background-color: var(--green);
+            padding: 1.2rem;
+            font-size: 1.2rem;
+            color: #fff;
+            transition: All .5s linear;
+        }
+
+        .link:hover {
+            background-color: var(--green);
+        }
+
+        #check:checked~.aside {
+            transform: translateX(300px);
+        }
+
+        #check:checked~label #hamburger .bar1 {
+            background-color: #fff;
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        /* Fade out the second bar icon menu*/
+        #check:checked~label #hamburger .bar2 {
+            opacity: 0;
+        }
+
+        /* Rotate last bar icon menu*/
+        #check:checked~label #hamburger .bar3 {
+            background-color: #fff;
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+
+
+        .order {
+            color: #fff;
+            padding: 5em;
+            text-align: center;
+            background-color: #025a1ff1;
+        }
+
+        .order header {
+            margin-bottom: 2em;
+        }
+
+        /* gradient */
+        .pixels {
+            background: linear-gradient(to right, yellowgreen 5%, rgb(30, 205, 5) 17%, rgb(0, 155, 85) 20%, #025a1ff1 25%);
+        }
+
+        .percents {
+            background: linear-gradient(to right, rgba(0, 64, 9, 0.89) 2em, #025a1ff1 3em, rgb(6, 162, 79) 7em, rgba(60, 200, 70, 0.89) 12em);
+        }
+
+        .negative {
+            background: linear-gradient(to right, rgb(167, 235, 135) -50%, #025a1ff1 150%);
+        }
+
+        .gold {
+            background: linear-gradient(orangered, gold);
+        }
+
+        .lg-gold {
+            background: linear-gradient(to top left, rgb(0, 66, 128), #025a1ff1, rgb(0, 255, 149), gold);
+            background-size: cover;
+            color: #fff;
+            font-size: 1.2em;
+        }
+
+        ul.buttons li {
+            display: block;
+            padding: 1em 0 0 0;
+        }
+
+        ul.buttons li {
+            padding: 0;
+        }
+
+        ul.buttons li {
+            display: inline-block;
+            padding: 0 0 0 1.5em;
+        }
+
+        .button {
+            border: solid 1px;
+            color: inherit;
+            display: inline-block;
+            font-size: 0.8em;
+            font-weight: 900;
+            letter-spacing: 2px;
+            min-width: 18em;
+            padding: 0 0.75em;
+            line-height: 3.75em;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: rgba(188, 202, 206, 0.15);
+            border-color: inherit;
+        }
+
+        .button.special:hover {
+            background: #aea222 !important;
+            border-color: #9e9136 !important;
+        }
+
+        .great-started {
+            background: url(../images/02.jpg) fixed no-repeat;
+            background-size: cover;
+
+            padding: 6em 0;
+        }
+
+        .great-started-section{
+            background: url(../images/01.jpg) fixed no-repeat;
+            background-size: cover;
+            padding: 6em 0;
+        }
+
+        .great-started-text h4 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        .great-started-text h2 {
+            color: #fff;
+            font-size: 40px;
+            margin: 25px;
+            text-transform: uppercase;
+        }
+
+        .great-started-text .btn-common {
+            text-transform: uppercase;
+        }
+
+
+        .special-alt {
+            text-align: center;
+
+            padding: 5em;
+        }
+
+        .special-alt footer {
+            margin-top: 1em;
+        }
+
+        .nav-footer {
+            margin: 0 auto;
+            text-align: center;
+
+        }
+
+        .footer-border {
+            border: solid 1px;
+        }
+
+        .nav-footer a {
+            position: relative;
+            display: inline-block;
+            margin: 5px auto;
+            outline: none;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+            font-size: 1.5em;
+            overflow: hidden;
+        }
+
+        .section-header {
+            text-align: center;
+            padding-top: 0.1em;
+            margin-bottom: 0.5em;
+            font-size: 1.3em;
+        }
+
+
+        .section-header {
+            text-align: center;
+            padding-top: 0.1em;
+            margin-bottom: 0.5em;
+            font-size: 2.3em;
+        }
+
+        section .row {
+            text-align: center;
+        }
+
+
+        section.special, article.special {
+            text-align: center;
+        }
+        
+        header.special {
+            text-align: center;
+            padding-top: 5.5em;
+            margin-bottom: 4em;
+        }
+        header.special h2 {
+            margin-bottom: 0;
+            font-size: 2em;
+        }
+        
+        header.special h2 + p {
+            margin-bottom: 0;
+            padding-top: 1.5em;
+        }
+        
+        header.special .icon {
+            cursor: default;
+            height: 7em;
+            left: 0;
+            text-align: center;
+            top: 1em;
+            width: 100%;
+        }
+        
+        header.special .icon:before {
+            font-size: 3.5em;
+            opacity: 0.35;
+        }
+        
+        .special-alt {
+            text-align: center;
+            margin-bottom: 5em;
+            padding: 5em;
+        }
+        
+        .special-alt footer{
+            margin-top: 1em;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <header class="navbar">
+        <input type="checkbox" id="check" />
+        <label id="icon" for="check">
+            <div id="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </label>
+        <h1 class="logo">Peculiar Shopaholic</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+        <div class="aside">
+            <nav>
+                <div class="link">Categories</div>
+                <a href="#">
+                    <div class="link">Category 1</div>
+                </a>
+                <a href="#">
+                    <div class="link">Category 1</div>
+                </a>
+                <a href="#">
+                    <div class="link">Category 1</div>
+                </a>
+                <a href="#">
+                    <div class="link">Category 1</div>
+                </a>
+                <a href="#">
+                    <div class="link">Category 1</div>
+                </a>
+                <a href="#">
+                    <div class="link">Category 1</div>
+                </a>
+                <a href="#">
+                    <div class="link">Category 1</div>
+                </a>
+                <a href="#">
+                    <div class="link">Category 1</div>
+                </a>
+                <a href="#">
+                    <div class="link">Category 1</div>
+                </a>
+                <a href="#">
+                    <div class="link">Category 1</div>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="grid-container">
+        <section class="top-container">
+            <header class="showcase">
+                <h1>Your Web Presence</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ipsam! Nihil quo minima nulla atque!
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </header>
+            <div class="top-box top-box-a">
+                <h4>Membership</h4>
+                <p class="price">$199/mo</p>
+                <a href="" class="btn">Buy Now</a>
+            </div>
+            <div class="top-box top-box-b">
+                <h4>Pro Membership</h4>
+                <p class="price">$299/mo</p>
+                <a href="" class="btn">Buy Now</a>
+            </div>
+        </section>
+        <section class="boxes">
+            <div class="box">
+                <i class="fas fa-chart-pie fa-4x"></i>
+                <h3>Analytics</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe fa-4x"></i>
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-cog fa-4x"></i>
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-users fa-4x"></i>
+                <h3>Support</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+            </div>
+        </section>
+
+        <header class="container special">
+            <span class=""><i class="icon fas fa-cog"></i></span>
+            <h2>I decided to give it a really creative name.</h2>
+            <p>Turns out <strong>Peculiar Shopaholic</strong> was the best I could come up with. Anyway, lame name aside,
+            </p>
+            <p>
+                it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
+                and, like all my stuff,
+            </p>
+            <p>
+                released for free under the <a href="#">MIT</a> license. Have fun!</p>
+        </header>
+    
+
+        <section class="great-started-section">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="great-started-text text-center">
+                            <h4 class="">We Are Ready to Help You</h4>
+                            <h2 class="">Get the Best Solution for Your Business</h2>
+                            <a href="#" class="btn btn-common">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="section-c" class="about-grid">
+            <div class="content-wrap">
+                <h2 class="content-title">We handle all of your digital needs</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat
+                    cupiditate, dolore eius! Minus, explicabo.</p>
+            </div>
+        </section>
+
+        <section id="section-d" class="contact-grid">
+            <div class="contact-box">
+                <h2 class="content-title">Contact Us</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et
+                    voluptas obcaecati unde fuga.</p>
+                <p>contact@my.test</p>
+            </div>
+            <div class="contact-box">
+                <h2 class="content-title">About Our Company</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum porro deserunt, deleniti,
+                    quae facere repudiandae, officiis est exercitationem nobis iusto doloremque! Soluta excepturi in aut
+                    suscipit amet temporibus quo?</p>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div><img src="../images/cat1.jpg"></div>
+            <div><img src="../images/cat2.jpg"></div>
+            <div><img src="../images/cat3.jpg"></div>
+            <div><img src="../images/cat4.jpg"></div>
+            <div><img src="../images/cat5.jpg"></div>
+        </section>
+
+    </main>
+
+    <section id="about" class="section special-alt lg-gold">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header>
+                        <h3>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up
+                            space. your call bro.</h3>
+                    </header>
+                    <p>
+                        Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum
+                        lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget
+                        commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.
+                    </p>
+                    <footer class="nav-footer footer-border push-out">
+                        <a href="#" data-hover="Find Out More"><span>Find Out More</span></a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="container special">
+        <span class=""><i class="icon fas fa-cog"></i></span>
+        <h2 class="section-title">Our Best Plans</h2>
+        <p>Turns out <strong>Peculiar Shopaholic</strong> was the best I could come up with. Anyway, lame name aside,
+        </p>
+        <p>
+            it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
+            and, like all my stuff,
+        </p>
+        <p>
+            released for free under the <a href="#">MIT</a> license. Have fun!</p>
+    </header>
+
+
+    <section id="pricing" class="pricing">
+        <div class="pricing-section">
+            <div class="pricing-tables">
+
+                <div class="pricing-table">
+                    <div class="plan-name color-1">
+                        <h3>Starter</h3>
+                    </div>
+                    <div class="plan-price">
+                        <div class="price-value"><span>$</span> 39 <span>.25</span></div>
+                        <div class="interval">Smart <br> Cat</div>
+                    </div>
+                    <div class="plan-list">
+                        <ul>
+                            <li>4 Programs</li>
+                            <li>No Support</li>
+                            <li>Limited Access</li>
+                            <li>1 User</li>
+                        </ul>
+                    </div>
+                    <div class="plan-signup">
+                        <a href="#" class="btn btn-common">get started</a>
+                    </div>
+                </div>
+
+                <div class="pricing-table">
+                    <div class="plan-name color-2">
+                        <h3>Premium</h3>
+                    </div>
+                    <div class="plan-price">
+                        <div class="price-value"><span>$</span> 69 <span>.99</span></div>
+                        <div class="interval">High <br> Dog</div>
+                    </div>
+                    <div class="plan-list">
+                        <ul>
+                            <li>10 Programs</li>
+                            <li>24/7 Support</li>
+                            <li>Limited Access</li>
+                            <li>4 User</li>
+                        </ul>
+                    </div>
+                    <div class="plan-signup">
+                        <a href="#" class="btn btn-border">get started</a>
+                    </div>
+                </div>
+
+                <div class="pricing-table">
+                    <div class="plan-name color-3">
+                        <h3>Unltimate</h3>
+                    </div>
+                    <div class="plan-price">
+                        <div class="price-value"><span>$</span> 89 <span>.99</span></div>
+                        <div class="interval">Business <br> Pet</div>
+                    </div>
+                    <div class="plan-list">
+                        <ul>
+                            <li>15 Programs</li>
+                            <li>24/7 Support</li>
+                            <li>Full Access</li>
+                            <li>8 User</li>
+                        </ul>
+                    </div>
+                    <div class="plan-signup">
+                        <a href="#" class="btn btn-common">get started</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="great-started section">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="great-started-text text-center">
+                        <h4 class="">We Are Ready to Help You</h4>
+                        <h2 class="">Get the Best Solution for Your Business</h2>
+                        <a href="#" class="btn btn-common">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order negative">
+
+        <header>
+            <h2>Ready to do <strong>something</strong>?</h2>
+            <p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+        </header>
+        <footer>
+            <ul class="buttons">
+                <li><a href="#" class="button special">Take My Money</a></li>
+                <li><a href="#" class="button">LOL Wut</a></li>
+            </ul>
+        </footer>
+
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="copyright">
+            <!-- container -->
+            <div class="container">
+                <div class="site-info">
+                    2020 &copy; Peculiar Shopaholic by <a rel="nofollow" href="#">Janus</a>
+                </div>
+                <div class="bottom-social-icons social-icon float-right">
+                    <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
+                    <a class="google-plus" href="#"><i class="fab fa-google-plus"></i></a>
+                    <a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+                    <a class="dribble" href="#"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+    </footer>
+    <!-- /.footer -->
+</body>
+
+</html>

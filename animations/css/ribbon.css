@@ -1,0 +1,34 @@
+.card{
+    position: relative;
+}
+
+.wrap {
+    width: 90%;
+    height: 150px;
+    position: absolute;
+    top: 15px;
+    left: 1px;
+    overflow: hidden;
+}
+
+.wrap:before, .wrap:after {
+    content: "";
+    position: absolute;
+}
+
+.ribbon {
+    width: 60%;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: 40px;
+    right: -35px;
+    z-index: 2;
+    transform: rotate(45deg);
+    border: 1px dashed;
+    box-shadow:0 0 0 3px #57DD43,  0px 21px 5px -18px rgba(0,0,0,0.6);
+    background: #57DD43;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}

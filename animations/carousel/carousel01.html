@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Carousel 01</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        .carousel {
+            height: 300px;
+            width: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            padding: 0;
+            list-style: none
+        }
+
+        .carousel__slide {
+            display: block;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="carousel">
+        <input class="carousel__activator" type="radio" name="carousel" id="A" checked="checked" />
+        <input class="carousel__activator" type="radio" name="carousel" id="B" />
+        <input class="carousel__activator" type="radio" name="carousel" id="C" />
+        <input class="carousel__activator" type="radio" name="carousel" id="D" />
+        <input class="carousel__activator" type="radio" name="carousel" id="E" />
+
+        <li class="carousel__slide">
+            <h1>A</h1>
+        </li>
+        <li class="carousel__slide">
+            <h1>B</h1>
+        </li>
+        <li class="carousel__slide">
+            <h1>C</h1>
+        </li>
+        <li class="carousel__slide">
+            <h1>D</h1>
+        </li>
+        <li class="carousel__slide">
+            <h1>E</h1>
+        </li>
+    </ul>
+</body>
+
+</html>

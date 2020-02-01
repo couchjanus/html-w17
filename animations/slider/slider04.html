@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico">
+    <title>Peculiar Shopaholic</title>
+    
+    <link href="../css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/grid.css">
+
+
+    <style>
+            #main header  {
+                margin: 0 auto;
+                text-align: center;
+        }
+        
+        .content-slider {
+            width: 90%;
+            margin: 0 auto;
+            height: 450px;
+        }
+
+        .slider {
+            height: 400px;
+            width: 90%;
+            margin: 40px auto;
+            overflow: visible;
+            position: relative;
+        }
+
+        .slider ul {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        .slider li {
+            width: 90%;
+            height: 400px;
+            list-style: none;
+            width: 90%;
+            position: absolute;
+            top: -420px;
+        }
+
+        .slider .quote {
+            font-size: 20px;
+            font-style: italic;
+            padding-top: 2rem;
+        }
+
+        .slider .source {
+            font-size: 20px;
+            text-align: right;
+        }
+
+        .mask {
+            overflow: hidden;
+            height: 400px;
+        }
+
+        .slider li.anim1 {
+            animation: cycle1 15s linear infinite;
+        }
+
+        .slider li.anim2 {
+            animation: cycle2 15s linear infinite;
+        }
+
+        @keyframes cycle1 {
+            0% {
+                top: 0px;
+            }
+
+            4% {
+                top: 0px;
+            }
+
+            16% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            20% {
+                top: 325px;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            21% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            50% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            92% {
+                top: -325px;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            96% {
+                top: -325px;
+                opacity: 0;
+            }
+
+            100% {
+                top: 0px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes cycle2 {
+            0% {
+                top: -325px;
+                opacity: 0;
+            }
+
+            16% {
+                top: -325px;
+                opacity: 0;
+            }
+
+            20% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            24% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            36% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            40% {
+                top: 325px;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            41% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            100% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <input type="checkbox" id="menu-trigger" /> 
+        <label class='label' for="menu-trigger">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </label>
+        
+        <div class="navbar-brand float-left" href="#">Peculiar Shopaholic</div>
+
+        <div class="navbar-navigation float-right">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
+                <a class="btn-search" type="submit">Search</a>
+            </form>
+        </div>
+    </nav>
+    
+    <!-- Main -->
+    <article id="main">
+        <section class="wrapper style3 container special">
+            <div class="content-slider">
+                <div class="slider">
+                    <div class="mask">
+                        <ul>
+                            <li class="anim1">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="../images/cat1.jpg">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="quote">Q: What did the cat say when he lost all his money? 
+                                             </div>
+                                        <div class="source">- A: I'm paw!</div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="anim2">
+                                <div class="row">
+
+                                    <div class="col-6">
+                                        <div class="quote">Q: Why don't cats like online shopping? 
+                                            </div>
+                                        <div class="source">- A: They prefer a cat-alogue.</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="../images/cat2.jpg">
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="anim3">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="../images/cat3.jpg">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="quote">Q: Why are cats so good at video games? 
+                                             </div>
+                                        <div class="source">- A: Because they have nine lives!</div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="anim4">
+                                <div class="row">
+
+                                    <div class="col-6">
+                                        <div class="quote">Q. How do you know when your cat's done cleaning herself? 
+                                             </div>
+                                        <div class="source">- A. She's smoking a cigarette.</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="../images/cat4.jpg">
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="anim5">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="../images/cat5.jpg">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="quote">Q: What do you get if you cross a cat with a dark horse? 
+                                             </div>
+                                        <div class="source">A: Kitty Perry</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <div class="cf"></div>
+    <footer class="">
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="site-info float-left">
+                            2020 &copy; Peculiar Hopaholic Template by <a rel="nofollow" href="#">Janus</a>
+                        </div>
+                        <div class="bottom-social-icons social-icon float-right">
+                            <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
+                            <a class="google-plus" href="#"><i class="fab fa-google-plus"></i></a>
+                            <a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+                            <a class="dribble" href="#"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+</body>
+
+</html>

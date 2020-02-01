@@ -1,0 +1,341 @@
+/* banner */
+.banner {
+    color: #fff;
+    text-align: center;
+    padding: 6em 0;
+    background-attachment: fixed;
+	background-color: #64a862;
+	background-image: url("../images/01.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner .inner {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 3em;
+    background: rgba(02, 64, 23, 0.5);
+}
+
+.banner .inner header {
+    display: inline-block;
+    padding: 3px 0 3px 0;
+    margin: 0 0 2em 0;
+    border-bottom: solid 2px;
+	border-top: solid 2px;
+}
+
+.banner .inner header h2 {
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    padding-left: 0.05em;
+    margin: 0;
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+}
+
+.banner .inner p {
+    letter-spacing: 0.1em;
+    margin: 0 7em;
+}
+
+.banner .inner p a {
+    color: inherit;
+    font-weight: 400;
+    text-decoration: none;
+}
+.banner .inner footer {
+    margin: 2em 0 0 0;
+}
+
+.btn-special {
+    background: rgba(255, 255, 255, 0.5);;
+    border: double 2px #fff;
+    font-weight: 900;
+    color: #fff;
+}
+
+.btn-special:hover {
+    background: #96dad1 !important;
+    border-color: #058d7bcb !important;
+    
+}
+
+
+.great-started {
+    background: url(../images/02.jpg) fixed no-repeat;
+    background-size: cover;
+    background-position: 50% -210px;
+    padding: 6em 0;
+}
+
+.great-started .great-started-text h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.great-started .great-started-text h2 {
+    color: #fff;
+    font-size: 40px;
+    margin: 25px;
+    text-transform: uppercase;
+}
+
+.great-started .great-started-text .btn-common {
+    text-transform: uppercase;
+}
+
+
+
+.pricing-section .section-header {
+    color: #444;
+}
+
+.pricing-tables {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.pricing-tables ul {
+    list-style: none;
+}
+.pricing-tables .pricing-table {
+    background: #f6f6f6;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+}
+.pricing-tables .pricing-table:hover {
+    z-index: 2;
+    top: -3px;
+}
+.pricing-tables .highlight-plan {
+    margin: -15px 0;
+    margin-right: -1px;
+    z-index: 1;
+    background: #f6f6f6;
+}
+.pricing-tables .pricing-table.highlight-plan .plan-name {
+    padding: 25px 0;
+}
+.pricing-tables .pricing-table.highlight-plan .plan-name h3 {
+    color: #fff;
+}
+.pricing-tables .pricing-table.highlight-plan .plan-signup {
+    padding: 30px 0;
+    background: #3498db;
+}
+.pricing-tables
+    .pricing-table.highlight-plan
+    .plan-signup
+    .btn-system.border-btn {
+    border-color: #fff;
+    color: #fff;
+}
+.pricing-table .color-1 {
+    background: #00bac7;
+}
+.pricing-table .color-2 {
+    background: #3498db;
+}
+.pricing-table .color-3 {
+    background: #e8003e;
+}
+.pricing-table .plan-name {
+    padding: 25px 0;
+}
+.pricing-table .plan-name h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+.pricing-table .plan-price {
+    padding: 25px 0;
+}
+.pricing-table .plan-price .price-value {
+    font-size: 50px;
+    line-height: 76px;
+    font-weight: 700;
+    color: #333;
+}
+.pricing-table .plan-price .price-value span {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.pricing-table .plan-price .interval {
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.pricing-table .plan-list li {
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+}
+.pricing-table .plan-list li:first-child {
+    border-top: 1px solid #eee;
+}
+.pricing-table .plan-signup {
+    padding: 25px 0;
+}
+.pricing-table .plan-signup a {
+    text-transform: uppercase;
+}
+
+
+
+.nav-footer {
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.footer-border {
+	border: solid 1px;
+}
+
+.nav-footer a {
+    position: relative;
+	display: inline-block;
+    margin: 5px auto;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1.5em;   
+	overflow: hidden;
+}
+.section-header{
+    text-align: center;
+    padding-top: 0.1em;
+    margin-bottom: 0.5em;
+	font-size: 1.3em;
+}
+/* special */
+
+section.special, article.special {
+    text-align: center;
+}
+
+header.special {
+    text-align: center;
+    padding-top: 5.5em;
+    margin-bottom: 4em;
+}
+header.special h2 {
+	margin-bottom: 0;
+	font-size: 2em;
+}
+
+header.special h2 + p {
+    margin-bottom: 0;
+    padding-top: 1.5em;
+}
+
+header.special .icon {
+    cursor: default;
+    height: 7em;
+    left: 0;
+    text-align: center;
+    top: 1em;
+    width: 100%;
+}
+
+header.special .icon:before {
+    font-size: 3.5em;
+    opacity: 0.35;
+}
+
+.special-alt {
+    text-align: center;
+    margin-bottom: 5em;
+    padding: 5em;
+}
+
+.special-alt footer{
+    margin-top: 1em;
+}
+
+ul.buttons li {
+    display: block;
+    padding: 1em 0 0 0;
+}
+
+ul.buttons li {
+    padding: 0;
+}
+
+ul.buttons li {
+    display: inline-block;
+    padding: 0 0 0 1.5em;
+}
+/*  */
+.button {
+    border: solid 1px;
+    color: inherit;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    min-width: 18em;
+    padding: 0 0.75em;
+    line-height: 3.75em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: rgba(188, 202, 206, 0.15);
+    border-color: inherit;
+}
+
+.button.special:hover {
+    background: #aea222 !important;
+    border-color: #9e9136 !important;
+}
+
+
+.order {
+    color: #fff;
+    padding: 5em;
+    text-align: center;
+    background-color: #025a1ff1;
+}
+
+.order header {
+    margin-bottom: 2em;
+}
+
+/* gradient */
+.pixels {
+    background: linear-gradient(to right, yellowgreen 5%, rgb(30, 205, 5) 17%, rgb(0, 155, 85) 20%, #025a1ff1 25%);
+}
+.percents {
+    background: linear-gradient(to right, rgba(0, 64, 9, 0.89) 2em, #025a1ff1 3em, rgb(6, 162, 79) 7em, rgba(60, 200, 70, 0.89) 12em);
+}
+.negative {
+   background: linear-gradient(to right, rgb(167, 235, 135) -50%, #025a1ff1 150%);
+}
+
+.gold {
+    background: linear-gradient(orangered, gold);
+}
+
+.lg-gold {
+    background: linear-gradient(to top left, rgb(0, 66, 128), #025a1ff1, rgb(0, 255, 149), gold);
+    background-size: cover;
+    color: #fff;
+    font-size: 1.2em;
+}
